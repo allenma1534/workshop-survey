@@ -47,6 +47,25 @@
             transition: all 0.15s ease-in-out;
             box-shadow: 0 6px 12px rgba(0,0,0,0.05);
             touch-action: manipulation; 
+            display: flex;
+            flex-direction: colummn;
+            justify-content: center:
+            align-items: center;
+            padding: 25px 15px;
+            gap: 10px;
+            
+        }
+        .btn img {
+            width: 90px;
+            height: 90px;
+            object-fit: contain;
+            pointer-events: none; 
+            -webkit-user-drag: none;
+        }
+        .btn span {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #333333;
         }
         .btn:active {
             background-color: #007aff;
@@ -74,15 +93,19 @@
         <div class="grid">
             <button class="btn" onclick="submitFeedback('No more confident')">
                 <img src="verysad.png" alt="Low">
+                <span>No more</span>
+            </button>
+            <button class="btn" onclick="submitFeedback('Slightly more confident')">
+                <img src="sad.png" alt="Medium-Low">
+                <span>A little bit more</span>
             </button>
             <button class="btn" onclick="submitFeedback('Somewhat more confident')">
-                <img src="sad.png" alt="Medium-Low">
-            </button>
-            <button class="btn" onclick="submitFeedback('More confident')">
                 <img src="happy.png" alt="Medium-High">
+                <span>A Good bit more</span>
             </button>
-            <button class="btn" onclick="submitFeedback('Much more confident')">
+            <button class="btn" onclick="submitFeedback('Significantly more confident')">
                 <img src="veryhappy.png" alt="High">
+                <span>A lot more</span>
             </button>
         </div>
     </div>
