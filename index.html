@@ -35,33 +35,23 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 25px;
         }
-        .btn {
-            /*background-color: #ffffff;
-            border: 3px solid #007aff;
-            color: #007aff;
-            padding: 50px 20px;
-            font-size: 1.8rem;
-            font-weight: bold;
-            border-radius: 20px;
-            cursor: pointer;
-            transition: all 0.15s ease-in-out;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
-            touch-action: manipulation; */
+        ..btn {
             background-color: #ffffff;
             border: 3px solid #007aff;
             border-radius: 20px;
             cursor: pointer;
             transition: all 0.15s ease-in-out;
             box-shadow: 0 6px 12px rgba(0,0,0,0.05);
-            touch-action: manipulation;
-            
+            touch-action: manipulation; 
+            padding: 20px 15px;
+            width: 100%;
+        }
+        .btn-content {
             display: flex;
-            flex-direction: colummn;
-            justify-content: center:
+            flex-direction: column !important;
             align-items: center;
-            padding: 25px 15px;
+            justify-content: center;
             gap: 10px;
-            
         }
         .btn img {
             width: 90px;
@@ -69,11 +59,13 @@
             object-fit: contain;
             pointer-events: none; 
             -webkit-user-drag: none;
+            display: block;
         }
         .btn span {
             font-size: 1.3rem;
             font-weight: 600;
             color: #333333;
+            display: block;
         }
         .btn:active {
             background-color: #007aff;
